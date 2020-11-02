@@ -1,0 +1,115 @@
+body {
+    position: relative;
+}
+
+/* HEADER */
+.header {
+    background: #161938;
+    padding: 3rem 0;
+    color: white;
+}
+
+.header .subheader {
+    font-size: .8rem;
+    margin: 0;
+}
+
+
+.header .subheader a {
+    color: white;
+}
+
+.header .logo {
+    width: 85px;
+}
+
+/* MAIN */
+.main {
+    margin-top: 3rem;
+}
+/* MAIN SIDEBAR */
+.main .sidebar-nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1rem;
+}
+
+.main .sidebar {
+    list-style: none;
+    padding-left: 0;
+}
+
+.main .sidebar li {
+}
+
+.main .sidebar li a {
+    padding: .5rem .75rem;
+    color: #373737;
+    transition: all .3s ease;
+}
+
+.main .sidebar li a:hover {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.main .sidebar li a.active {
+    color: var(--primary);
+    border-left: 5px solid var(--primary);
+    font-weight: bold;
+}
+
+.main .sidebar-sub {
+    list-style: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.main .sidebar-sub li {
+    margin-bottom: 0;
+}
+
+.main .sidebar-sub li a {
+    font-size: .9rem;
+}
+
+/* MAIN CONTENT */
+.main #content {
+}
+
+.main section {
+    margin-bottom: 5rem;
+}
+
+.main .block {
+    margin: 2.5rem 0;
+}
+
+.main .block li {
+    margin-bottom: .5rem;
+}
+
+.main .img-icon {
+    width: 20px
+}
+
+/* ^_^ */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.65rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    color: var(--gray-700);
+}

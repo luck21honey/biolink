@@ -1,0 +1,160 @@
+/* Overriding bootstrap defaults */
+$primary-900: hsla(217, 90%, 93%, 1);
+$primary-800: hsla(217, 90%, 84%, 1);
+$primary-700: hsla(217, 90%, 75%, 1);
+$primary-600: hsla(217, 90%, 69%, 1);
+$primary: hsl(217, 98%, 62%);
+$primary-400: hsla(217, 80%, 53%, 1);
+$primary-300: hsla(217, 80%, 45%, 1);
+$primary-200: hsla(217, 80%, 25%, 1);
+$primary-100: hsla(217, 80%, 15%, 1);
+
+$gray-900: hsl(204, 45%, 92%) !default;
+$gray-800: hsl(210, 38%, 84%) !default;
+$gray-700: hsl(214, 32%, 78%) !default;
+$gray-600: hsl(211, 25%, 64%) !default;
+$gray-500: hsl(214, 20%, 60%) !default;
+$gray-400: hsl(216, 15%, 38%) !default;
+$gray-300: hsl(218, 17%, 24%) !default;
+$gray-200: hsl(218, 21%, 15%) !default;
+$gray-100: hsl(220, 17%, 8%) !default;
+$gray-50: hsl(220, 10%, 4%) !default;
+
+$theme-colors: (
+    "gray-50": $gray-50,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-400": $gray-400,
+    "gray-500": $gray-500,
+    "gray-600": $gray-600,
+    "gray-700": $gray-700,
+    "gray-800": $gray-800,
+    "gray-900": $gray-900,
+
+    "primary-100": $primary-100,
+    "primary-200": $primary-200,
+    "primary-300": $primary-300,
+    "primary-400": $primary-400,
+    "primary-600": $primary-600,
+    "primary-700": $primary-700,
+    "primary-800": $primary-800,
+    "primary-900": $primary-900
+);
+
+/* Overriding */
+$white: hsl(220, 7%, 8%);
+$black: #fff;
+$text-muted: $gray-400;
+
+$body-bg: hsl(220, 2%, 5%);
+$body-color: $gray-800;
+
+$nav-pills-link-active-bg: $primary-900;
+
+$yiq-text-dark: $gray-100;
+$yiq-text-light: $black;
+
+$dropdown-border-width: 0;
+$modal-backdrop-bg: black;
+
+$code-color: $primary;
+
+$card-border-color: $gray-200;
+$card-bg: $gray-100;
+
+/* Inputs */
+$input-border-color: $gray-300;
+$input-color: $gray-600;
+
+/* Shadows */
+$box-shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$box-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$box-shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$box-shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+$box-shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+/* Blockquote footer */
+$blockquote-small-color: $gray-800;
+
+@import "./bootstrap/bootstrap";
+
+/* a */
+a:not(.dropdown-item):not(.btn):not(.nav-link) {
+    transition: color .3s linear !important;
+}
+
+
+/* Inputs */
+.form-control {
+    font-size: 0.9rem;
+    transition: border .3s linear;
+}
+
+.form-control:hover {
+    border-color: $gray-500;
+}
+
+/* Shadows */
+.shadow-sm { box-shadow: $box-shadow-sm !important; }
+.shadow-md { box-shadow: $box-shadow-md !important; }
+.shadow-lg { box-shadow: $box-shadow-lg !important; }
+.shadow-xl { box-shadow: $box-shadow-xl !important; }
+.shadow-2xl { box-shadow: $box-shadow-2xl !important; }
+.shadow-inner { box-shadow: $box-shadow-inner !important; }
+
+
+/* Dropdown */
+.dropdown-toggle-simple::after {
+    display:none;
+}
+
+.dropdown-menu {
+    box-shadow: $box-shadow-lg;
+}
+
+.dropdown-item > svg {
+    color: $gray-700;
+}
+
+.dropdown-item:focus > svg {
+    color: inherit;
+}
+
+/* Animate dropdown menu */
+.dropdown .dropdown-menu{
+    animation-name: opacityIn;
+    animation-duration: .15s;
+}
+
+@keyframes opacityIn {
+    from { opacity: .3; }
+    to { opacity: 1; }
+}
+
+/* Nav pills */
+.nav-pills {
+    .nav-link {
+        color: $primary-900;
+    }
+}
+
+/* Code */
+code {
+    background: $primary-100;
+    border-radius: $border-radius;
+    padding: .15rem;
+}
+
+/* Buttons */
+.btn {
+    border-style: solid;
+}
+
+/* Extra variables */
+:root {
+    --black: #{$black};
+    --body-bg: #{$body-bg};
+    --body-color: #{$body-color};
+}
